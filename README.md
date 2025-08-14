@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎓 AI Personalized Tutor
 
 A comprehensive, AI-powered personalized learning platform that adapts to individual learning styles and provides real-time feedback and assessment.
@@ -271,3 +272,6 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 **Built with ❤️ for personalized learning**
 
 **Happy Learning! 🎓✨**
+=======
+# Personalized_AI_Tutor
+>>>>>>> c8c9a2ac9b46b805cf3518cb5d28239b0e4b8e02
