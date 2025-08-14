@@ -1,0 +1,225 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f8f9fa;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Custom styles for AI Tutor */
+.ai-tutor-container {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.main-content {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+  padding: 30px;
+}
+
+.feature-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.feature-icon {
+  font-size: 3rem;
+  color: #667eea;
+  margin-bottom: 1rem;
+}
+
+.auth-container {
+  max-width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.dashboard-stats {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.quiz-container {
+  background: #f8f9fa;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.emotion-detection {
+  background: #e3f2fd;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.skill-gap-heatmap {
+  background: white;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.teach-back-container {
+  background: #f3e5f5;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+.exam-readiness {
+  background: #e8f5e8;
+  border-radius: 15px;
+  padding: 20px;
+  margin: 20px 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .main-content {
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  .auth-container {
+    margin: 20px;
+    padding: 20px;
+  }
+  
+  .feature-card {
+    margin-bottom: 20px;
+  }
+}
+
+/* Animation classes */
+.fade-in {
+  animation: fadeIn 0.5s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.slide-in {
+  animation: slideIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from { transform: translateX(-100%); }
+  to { transform: translateX(0); }
+}
+
+/* Custom button styles */
+.btn-ai-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-ai-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+  color: white;
+}
+
+.btn-ai-secondary {
+  background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+  border: none;
+  color: white;
+  border-radius: 25px;
+  padding: 10px 25px;
+  transition: all 0.3s ease;
+}
+
+.btn-ai-secondary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 5px 15px rgba(240, 147, 251, 0.4);
+  color: white;
+}
+
+/* Progress bars */
+.progress-ai {
+  height: 10px;
+  border-radius: 5px;
+  background: #e9ecef;
+}
+
+.progress-ai .progress-bar {
+  border-radius: 5px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+/* Card enhancements */
+.card-ai {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.card-ai:hover {
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Form styling */
+.form-control-ai {
+  border-radius: 10px;
+  border: 2px solid #e9ecef;
+  padding: 12px 15px;
+  transition: all 0.3s ease;
+}
+
+.form-control-ai:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 0.2rem rgba(102, 126, 234, 0.25);
+}
+
+/* Alert styling */
+.alert-ai {
+  border-radius: 10px;
+  border: none;
+  padding: 15px 20px;
+}
+
+.alert-ai-success {
+  background: linear-gradient(135deg, #d4edda 0%, #c3e6cb 100%);
+  color: #155724;
+}
+
+.alert-ai-danger {
+  background: linear-gradient(135deg, #f8d7da 0%, #f5c6cb 100%);
+  color: #721c24;
+}
+
+.alert-ai-info {
+  background: linear-gradient(135deg, #d1ecf1 0%, #bee5eb 100%);
+  color: #0c5460;
+}
